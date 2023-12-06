@@ -1,0 +1,383 @@
+
+
+body{
+    overflow-x: hidden;
+}
+.header {
+    max-width: 100%;
+    height: 500px;
+    background-color: #E63945;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    margin: -10px;
+    padding: -10px;
+    margin-left: -10px;
+}
+
+.header:hover {
+
+    background-color: #ce313c;
+
+}
+
+* {
+    font-family: 'Amiri', serif;
+}
+
+.head1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+
+
+}
+
+.head2 {
+ 
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 120px;
+
+
+}
+
+.imgs {
+    background-image: url(https://websitedemos.net/fast-food-04/wp-content/uploads/sites/792/2021/03/bg-11-free-img.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    border-radius: 5px;
+    justify-content: center;
+
+
+
+}
+
+
+
+.our-points{
+    background-color: #faab34;
+}
+
+
+.our-points{
+    background-color: #faab34;
+}
+
+
+.deleted2 {
+    max-width: 100%;
+    height: 400px;
+    background-color: #faab34;
+    padding-bottom: 0%;
+    margin-right: -10px;
+    padding-right: -20px;
+}
+
+.font.yal {
+    position: absolute;
+}
+
+
+
+.para-container{
+    padding-right: 55px;
+    text-align: center;
+}
+
+.para-head {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    padding-top: 25px;
+}
+
+.para-body {
+    padding-top: 45px;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+  
+}
+
+.para-body2 {
+    padding-top: 8px;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    
+
+}
+
+.para-font {
+
+
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(235, 223, 223);
+    font-weight: 700;
+    text-shadow: -3px 1px 5px rgba(128, 128, 128, 0.714);
+    text-align: center;
+
+}
+
+/* *{border: 1px solid blue;} */
+
+.deleted {
+
+    border-left: 6px white solid;
+    height: 70px;
+    margin-left: 670px;
+    text-align: center;
+    position: absolute;
+
+}
+
+
+
+
+
+/* //////histore css */
+.history {
+  
+   
+    background-color: #f5f5f5;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://websitedemos.net/fast-food-04/wp-content/uploads/sites/792/2021/03/bg-11-free-img.jpg);
+    background-size: cover;
+
+
+}
+
+h6 {
+    color: #faab34;
+    text-align: center;
+    top: 40px;
+    padding-top: -10px;
+    margin: -10px;
+    margin-bottom: 4px;
+    line-height: 5cm;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+h2 {
+    color: #fcc8b0;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 40px;
+    
+    color: #e63945;
+    text-align: center;
+
+}
+
+.cuntener {
+    display: flex;
+    margin-top: 15px;
+    background-color: #272626;
+    opacity: 0.8;
+  
+}
+.lift h4 , .raight h4 {
+    padding-bottom: 35px;
+}
+.lift {
+    padding-inline:30px ;
+    width: 50%;
+    height: 550px;
+    /* background-color: #f5f5f5; */
+    color: #faab34;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: right;
+
+border-right: 1px solid white;
+
+}
+
+.raight {
+  padding-inline:30px ;
+    width: 50%; 
+    height: 550px;
+    color: #faab34;
+    font-size: x-large;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: right;
+    margin-right: 20px;
+
+
+}
+
+/* ////////////////// OUTLETS */
+.OUTLETS {
+    max-width: 100%;
+    height: 900px;
+    background-color: white;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+
+.v3 {
+
+    border-left: 2px wheat solid;
+    border-style: calc(.8);
+    height: 50px;
+    margin-left: 680px;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+
+}
+
+.img1 {
+    background-image: url(https://websitedemos.net/fast-food-04/wp-content/uploads/sites/792/2021/03/outlet-01-free-img.jpg);
+    width: 20%;
+    height: 400px;
+    background-color: #f5f5f5;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.img2 {
+    background-image: url(https://websitedemos.net/fast-food-04/wp-content/uploads/sites/792/2021/03/outlet-02-free-img.jpg);
+    width: 20%;
+    height: 400px;
+    background-color: #f5f5f5;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: left;
+
+
+}
+
+.img3 {
+    background-image: url(https://websitedemos.net/fast-food-04/wp-content/uploads/sites/792/2021/03/outlet-03-free-img.jpg);
+    width: 20%;
+    height: 400px;
+    background-color: #f5f5f5;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: left;
+
+
+}
+
+.div-imgs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.img1:hover {
+    transform: scale(1.1);
+}
+
+.img2:hover {
+    transform: scale(1.1);
+}
+
+.img3:hover {
+    transform: scale(1.1);
+}
+
+.OUR-OUTL {
+    max-width: 100%;
+    background-color: white;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.img1-a {
+    width: 20%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: right;
+}
+.img1-b {
+    width: 20%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: right;
+}
+.img1-d {
+    width: 20%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+
+.serc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+padding-bottom: 30px;
+
+
+}
+.sercil i{font-size: x-large;}
+.sercil {
+    width: 120px;
+    height: 120px;
+    background-color: beige;
+    border-radius: 70px;
+    display: flex;
+    
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+
+    justify-content: center;
+    align-items: center;
+}
+
+.serc *{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+/* *{border: 1px solid blue;} */
+

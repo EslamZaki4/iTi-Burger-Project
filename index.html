@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/cart-menu.css">
+    <link rel="stylesheet" href="css/invoice.css">
+    <link rel="stylesheet" href="css/offers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+<div class="invoiceModal hide" id="invoiceModal">
+
+
+
+<table id="invoice">
+<th>اسم الصنف</th>
+<th>السعر</th>
+<th>الكمية</th>
+<th>الاجمالى</th>
+</table>
+
+<div class="invoice-btns">
+
+<div type="button" class="closeInvoice" onclick="closeInvoice()">
+اغلاق
+</div>
+
+<div type="button" class="cancelInvoice" onclick="cancelInvoice()">
+حذف الفاتورة
+</div>
+<div type="button" class="makeInvoice" onclick="closeInvoice()">
+الحصول على الفاتورة
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="cart-menu" id="cart-menu">
+<button class="close" onclick="closeMenu()">X</button>
+<div class="img"></div>
+<div class="item">
+<div class="info">
+    <span href="" class="category">برجر</span>
+    <span href="" class="title" id="menuBurgerName">برجر باربيكيو سبايسى</span>
+    <span href="" class="price" id="menuBurgerPrice">120 L.E</span>
+    <span href="" class="descr">
+        شريحة لحم مهروسة، لحم مسحب بالباربيكيو، جبنة سويسرية، سلطة جرجير، ريلي
+
+    </span>
+</div>
+<div class="sale-box">
+    <button class="min" onclick="minus()">-</button>
+    <input id="qty" type="text" class="numb" value="1">
+    <button class="plus" onclick="plus()">+</button>
+    <button class="add-to-cart" onclick="saveInvoice()">اضافة الى السلة</button>
+</div>
+</div>
+</div>
+
+
+<nav>
+<div class="logo">
+<i class="fa-solid fa-burger"></i>
+<a>Iti Burger</a>
+</div>
+<ul>
+<li>الرئيسية</li>
+<li><a href="#menu"> القائمة
+</a>
+</li>
+
+
+
+
+<li onclick="window.open('pages/offer2.html','_self')">عروض</li>
+<li onclick="window.open('pages/about.html' ,'_self')">عن المطعم</li>
+<!-- <li>للتواصل</li> -->
+<li onclick="showInvoice()">
+    <i class="fa-solid fa-cart-shopping" style="padding-inline:5px ;"></i>
+    <a>سلة التسوق</a>
+
+</li>
+</ul>
+
+</nav>
+
+<div class="home-container">
+<main>
+<aside id="aside1">
+
+<h4 class="hs1" style="display: none;">كرسبى برجر حار</h4>
+<h6 class="hs2" style="display: none;">120$</h6>
+
+<p class="offer-price">120 L.E</p>
+<p class="offer-title"> كرسبى برجر حار</p>
+<div class="get-offer">
+    <div class="pop">
+        <a>20%</a>
+        <a>خصـم</a>
+    </div>
+    <p>احصل على 2 برجر معاهم واحد هدية بأول طلب اونلاين</p>
+    <button class="add-item"> اطلب الان</button>
+
+
+</div>
+
+</aside>
+<aside id="aside2">
+<div class="offer-img-container">
+    <img src="images/home-burger.png" class="offer-img" alt="">
+</div>
+
+</aside>
+</main>
+
+
+</div>
+
+<div class="offer-container">
+<div class="part1">
+
+<div class="offer1">
+
+<div class="discount1">
+خصم 50%
+</div>
+<div class="text1">
+
+<h1 class="hs1">وجبة الماجيك تندر</h1>
+<h3 class="hs2">38  l.E</h3>
+
+</div>
+<button class="but" > اطلب الان</button>
+
+
+</div>
+<div class="ofer2-3">
+<div class="ofer2">
+
+<div class="discount2">
+خصم 30%
+</div>
+<div class="text2">
+
+<h1 class="hs1">وجبة الكومبو </h1>
+<h3 class="hs2">30  l.E</h3>
+
+</div>
+<button > اطلب الان</button>
+
+</div>
+<div class="ofer3">
+
+<div class="discount3">
+50 l.E فقط
+</div>
+
+<div class="text3">
+
+<h1 class="hs1"> فرايز ويز زاوركس  
+</h1>
+<h3 class="hs2">50 l.E</h3>
+
+</div>
+<button > اطلب الان</button>
+
+</div>
+</div>
+</div>
+</div>
+
+        
+
+
+<!-- eslam Menu -->
+<div id="menu" class="menu-container">
+
+<div class="section1">
+
+
+<div class="burger1">
+
+<div class="contentBurger">
+<img class="imageBurger" src="./images/burger-06-free-img.png">
+<div class="hs">
+    <h4 class="hs1">برجر مكس</h4>
+    <h6 class="hs2">17,5$</h6>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.</p>
+    <button class="add-item"><i class="fa-solid fa-plus plus" style="color: #ffffff;"></i></button>
+</div>
+
+
+</div>
+
+
+</div>
+<div class="burger2">
+<div class="contentBurger">
+<img class="imageBurger" src=" ./images/burger-05-free-img.png">
+<div class="hs">
+    <h4 class="hs1">برجر دجاج</h4>
+    <h6 class="hs2">10,5$</h6>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.</p>
+    <button class="add-item"><i class="fa-solid fa-plus plus" style="color: #ffffff;"></i></button>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="burger3">
+<div class="contentBurger">
+<img class="imageBurger" src="./images/burger-02-free-img.png">
+<div class="hs">
+    <h4 class="hs1">برجر لحمه</h4>
+    <h6 class="hs2">12,5$</h6>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.</p>
+    <button class="add-item"><i class="fa-solid fa-plus plus" style="color: #ffffff;"></i></button>
+</div>
+
+</div>
+</div>
+
+
+
+
+</div>
+
+
+<div class="section2">
+<div class="burger1">
+
+<div class="contentBurger">
+<img class="imageBurger" src="./images/burger-03-free-img.png">
+<div class="hs">
+    <h4 class="hs1">دبل تشيز برجر</h4>
+    <h6 class="hs2">17,5$</h6>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.</p>
+    <button class="add-item"><i class="fa-solid fa-plus plus" style="color: #ffffff;"></i></button>
+</div>
+
+
+</div>
+
+
+</div>
+<div class="burger2">
+<div class="contentBurger">
+<img class="imageBurger" src=" ./images/burger-07-free-img.png">
+<div class="hs">
+    <h4 class="hs1">تشيز برجر</h4>
+    <h6 class="hs2">10,5$</h6>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.</p>
+    <button class="add-item"><i class="fa-solid fa-plus plus" style="color: #ffffff;"></i></button>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="burger3">
+<div class="contentBurger">
+<img class="imageBurger" src="./images/burger-04-free-img.png">
+<div class="hs">
+    <h4 class="hs1">بيج تايستي</h4>
+    <h6 class="hs2">12,5$</h6>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.</p>
+    <button class="add-item"><i class="fa-solid fa-plus plus" style="color: #ffffff;"></i></button>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="about-container">
+<header class="header">
+<div>
+<p class="head1">لمحة عنا</p>
+<p class="head2">من نحن </p>
+
+</div>
+</header>
+
+
+<section class="our-points">
+<div>
+
+<p class="para-head">نحن متحمسون لطعامنا </p>
+<div class="para-container">
+<p class="para-body">
+    مع مطعمنا يمكنكم الانتقال إلى أجواء فرنسية بامتياز في مطعمٍ رائع بتصميمه وأطباقه
+    الشهية والمتنوّعة
+</p>
+<p class="para-body2">
+    لدينا الطعام الذي يحبك.
+</p>
+</div>
+</div>
+<!-- ///////////////// -->
+<div class="serc">
+
+
+<div>
+<div class="sercil">
+    <i class="fa-solid fa-truck-fast" style="color:#e63945;"></i>
+</div>
+<p class="para-font"> شحن مجانا للطلب الاول </p>
+</div>
+
+<div>
+<div class="sercil">
+    <i class="fa-solid fa-burger" style="color:#e63945;"></i>
+</div>
+
+
+<p class="para-font"> مجموعة متنوعة من الاطباق </p>
+</div>
+
+<div>
+
+
+<div class="sercil">
+    <i class="fa-solid fa-clock" style="color:#e63945;"></i>
+</div>
+<p class="para-font"> تسليم خلال ثلاثون دقيقة</p>
+</div>
+</div>
+</section>
+<!-- ////////////////////////// -->
+<article class="history">
+<h6>تاريخنا</h6>
+<h2>تبدأ رحلتنا في عام 1952</h2>
+<div class="cuntener">
+<div class="lift">
+<h4>الاصل</h4>
+<h3>هناك بعض الأساطير حول ريادة الأعمال مثل أنه عليك أن
+    تبدأ في سن مبكرة جدًا لتصبح رائد أعمال ناجحًا. لكن صاحب
+    Iti Burger أثبت أن هذه الأسطورة خاطئة.
+    ذات مرة قال دالاس كلايتون، “لم يفت الأوان أبدًا لبدء شيء
+    جديد، لفعل كل تلك الأشياء التي كنت تتوق إلى القيام بها”
+    وصفته فريدة من نوعها، وبعد افتتاح متجر واحد، حقق النجاح أخيرًا.
+    واجه مالك كنتاكي فرايد تشيكن العديد من التحديات الناشئة،
+    ولكن بعد كل التعقيدات، قدم لنا دجاجه المقلي اللذيذ.
+    ولا يمكن لأي نوع آخر من الدجاج أن يضاهي طعم دجاج كنتاكي المقلي. لا يمكن استخدام هذه
+    الوصفة من قبل أي امتياز آخر. سبب آخر أدى إلى نجاح كنتاكي فرايد
+    تشيكن هو نظام الامتياز الذي تتبعه مطاعم كنتاكي في جميع أنحاء العالم.</h3>
+</div>
+<div class="raight">
+<h4>التاريخ</h4>
+<h3>كنتاكي فرايد تشيكن، أو كما نعرفها اليوم KFC، بدأت في عام 1952 في ولاية يوتا.
+    في يوليو/ تموز 1940، ابتكر هارلاند وصفته الفريدة من 11 نوعًا من الأعشاب وبعض النكهات.
+    لقد مر هارلاند ساندرز كثيرًا وأخيرًا كشف عن وصفته السرية لصديقه بيت هارمان.
+    كان بيت هو المشغل لواحد من أكبر المطاعم في تلك المدينة وبمساعدة بيت، افتتح Harland أول امتياز لـ
+    KFC.
+    أرادت العديد من المطاعم العالمية شراء امتياز كنتاكي فرايد تشيكن. بدأ الكثير من كبار المستثمرين
+    في
+    شراء أسهم كنتاكي فرايد تشيكن.
+    حتى بعد النجاح الكبير الذي حققته كنتاكي فرايد تشيكن، اعتاد ساندرز زيارة جميع مطاعم كنتاكي حول
+    العالم.
+</h3>
+</div>
+
+</div>
+</article>
+
+<section class="OUTLETS">
+<h6>المنافذ</h6>
+<h2>ابحث عن منفذ بالقرب منك</h2>
+<div class="v3"></div>
+<div class="div-imgs">
+<div class="img1"></div>
+<div class="img2"></div>
+<div class="img3"></div>
+</div><br>
+<div class="OUR-OUTL">
+<h3 class="img1-a">شارع مصطفي محمود المجاور لهيئة قضايا الدولة 0112918308</h3>
+<h3 class="img1-b"> المنصوره المشايه 0107158321</h3>
+<h3 class="img1-d">معهد تكنولوجيا المعلومات 012715548963</h3>
+</div>
+</section>
+
+</div>
+
+
+<footer>
+<div class="row-1">
+<ul>
+<li>الرئيسية</li>
+<li>العروض</li>
+<li>المنيو</li>
+<li>عن</li>
+<li>من نحن</li>
+</ul>
+<ul class="social">
+<li>
+<i class="fa-brands fa-instagram"></i>
+
+</li>
+<li>
+<i class="fa-brands fa-twitter"></i>
+</li>
+<li>
+
+<i class="fa-brands fa-facebook"></i>
+</li>
+</ul>
+</div>
+<div class="copyright">
+<a>Copyrigh iti Team FrontEnd 2023</a>
+</div>
+
+</footer>
+
+
+
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

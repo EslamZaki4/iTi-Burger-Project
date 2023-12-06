@@ -1,0 +1,25 @@
+li:hover{cursor: pointer;}
+button:hover{cursor: pointer;}
+
+
+@font-face {
+    font-family: "sultan";
+    src: url("./fonts/SULTAN-BOLD.TTF");
+}
+@font-face {
+    font-family: "font1";
+    src: url("../fonts/jb-funland.ttf");
+}
+@font-face {
+    font-family: "font2";
+    src: url("../fonts/king.ttf");
+}
+
+@font-face {
+    font-family: "font3";
+    src: url("../fonts/QTSWehda-SemiBold.otf");
+}
+@font-face {
+    font-family: "font4";
+    src: url("../fonts/AL-Gemah-Al-Mawash.ttf");
+}
